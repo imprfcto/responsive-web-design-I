@@ -258,10 +258,12 @@ footer {
         width: 90vw;
         margin: auto;
     }
+
     .header{
         justify-content: center;
         justify-items: center;
     }
+
     .container{
         max-width: 100%;
         margin: 0 auto;
@@ -271,6 +273,7 @@ footer {
         display: flex;
         order: -1;
         margin:auto;
+        padding-bottom: 5vh;
     }
 
     .snip{
@@ -280,9 +283,54 @@ footer {
     .middle-img{
         width: 100%;
     }
-    
+
     .cta{
-        max-width: 100vh;
+        max-width: 90vw;
         justify-content: center;
     }
-  }
+}
+
+  /* Mobile View */
+
+@media screen and (max-width: 500px){
+    nav{
+    flex-direction: column;
+    margin: auto -10vh;
+    }
+
+    nav a{
+        display: flex;
+        padding: 5% 40%;
+        border: 1px solid silver;
+        height: 3vh;
+        font-size: 20px;
+    }
+
+    .logo{
+        margin-bottom: -2vh;
+    }
+
+    .top-row, .bottom-row{
+    flex-direction: column;
+    }
+
+    .middle-content .text-content{
+    margin: 2vh 0;
+    }
+
+    #services, #vision, #about{
+        border-top: 1px solid gray;
+    }
+
+    #contact{
+        border-bottom: 1px solid gray;
+    }
+
+    .cta{
+        margin-left: 10vw;
+    }
+
+    .cta h1{
+        font-size: 15vw;
+    }
+}
